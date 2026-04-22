@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Clima</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" id="city-input" placeholder="Ingresa una ciudad..." spellcheck="false">
+            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        
+        <div class="weather" id="weather-info" style="display: none;">
+            <img src="https://openweathermap.org/img/wn/02d@4x.png" class="weather-icon" alt="clima">
+            
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">Madrid</h2>
+            
+            <div class="details">
+                <div class="col">
+                    <i class="fa-solid fa-water fa-2x"></i>
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humedad</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-wind fa-2x"></i>
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Viento</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="error-msg" style="display: none;">
+            <p><i class="fa-solid fa-circle-exclamation"></i> Ciudad no encontrada.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
